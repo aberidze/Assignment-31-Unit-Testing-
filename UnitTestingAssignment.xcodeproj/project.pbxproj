@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		328132182B1CC1270063D24E /* CartViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328132172B1CC1270063D24E /* CartViewModelTests.swift */; };
+		32F517152B1DEB5C004BE38E /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F517142B1DEB5C004BE38E /* NetworkTest.swift */; };
 		5AF683C22B1B70BC002E7966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF683C12B1B70BC002E7966 /* AppDelegate.swift */; };
 		5AF683C42B1B70BC002E7966 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF683C32B1B70BC002E7966 /* SceneDelegate.swift */; };
 		5AF683C62B1B70BC002E7966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF683C52B1B70BC002E7966 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		328132152B1CC1270063D24E /* UnitTestingAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		328132172B1CC1270063D24E /* CartViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModelTests.swift; sourceTree = "<group>"; };
+		32F517142B1DEB5C004BE38E /* NetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
 		5AF683BE2B1B70BC002E7966 /* UnitTestingAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestingAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF683C12B1B70BC002E7966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AF683C32B1B70BC002E7966 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				328132172B1CC1270063D24E /* CartViewModelTests.swift */,
+				32F517142B1DEB5C004BE38E /* NetworkTest.swift */,
 			);
 			path = UnitTestingAssignmentTests;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F517152B1DEB5C004BE38E /* NetworkTest.swift in Sources */,
 				328132182B1CC1270063D24E /* CartViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
