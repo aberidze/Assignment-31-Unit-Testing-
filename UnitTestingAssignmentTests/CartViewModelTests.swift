@@ -34,27 +34,44 @@ final class CartViewModelTests: XCTestCase {
         XCTAssertEqual(cartViewModel.selectedProducts.count, 1)
     }
     
-    func testAddProductWithProduct() {
-        
-    }
-    
     func testAddRandomProduct() {
-        
+        cartViewModel.fetchProducts()
+        cartViewModel.addRandomProduct()
+        XCTAssertEqual(cartViewModel.selectedProducts.count, 1)
     }
     
     func testRemoveProduct() {
-        
+        let removeProductID = 1
+        cartViewModel.fetchProducts()
+        cartViewModel.addProduct(withID: removeProductID)
+        cartViewModel.addProduct(withID: 2)
+        cartViewModel.addProduct(withID: 3)
+        cartViewModel.removeProduct(withID: removeProductID)
+        XCTAssertEqual(cartViewModel.selectedProducts.count, 2)
     }
     
     func testClearCart() {
-        
+        cartViewModel.fetchProducts()
+        cartViewModel.addRandomProduct()
+        cartViewModel.addProduct(withID: 1)
+        cartViewModel.addProduct(withID: 2)
+        cartViewModel.clearCart()
+        XCTAssertEqual(cartViewModel.selectedProducts.count, 0)
     }
     
     func testSelectedItemsQuantity() {
-        
+        cartViewModel.fetchProducts()
+        cartViewModel.allproducts![0].selectedQuantity = 5
+        cartViewModel.addProduct(withID: 1)
+        XCTAssertEqual(cartViewModel.selectedItemsQuantity, 5)
     }
     
     func testTotalPrice() {
-        
+        cartViewModel.fetchProducts()
+        cartViewModel.allproducts![0].selectedQuantity = 1
+        cartViewModel.addProduct(withID: 1)
+        cartViewModel.allproducts![1].selectedQuantity = 2
+        cartViewModel.addProduct(withID: 2)
+        XCTAssertEqual(cartViewModel.totalPrice, 2347)
     }
 }
